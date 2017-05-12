@@ -46,7 +46,7 @@ h2 {
 }
 
 p {
-  text-align: justify;
+  text-align: left;
   padding: 20px;
 }
 
@@ -173,11 +173,12 @@ nav ul a {
 /* MENTORES */
 
 .mentores>div>div {
-  width: 10%;
+  width: 20%;
   text-align: center;
   display: inline-block;
   margin: 10px 2%;
   margin-bottom: 2%;
+  vertical-align: text-top;
 }
 
 .mentores>div>div img {
@@ -185,7 +186,7 @@ nav ul a {
 }
 
 .jurados.mentores>div>div {
-  width: 20%;
+  width: 30%;
 }
 
 
@@ -239,15 +240,15 @@ footer a {
     width: 90%;
   }
   .mentores>div>div {
-    width: calc(50% - 17px);
+    width: 95%;
   }
   .jurados.mentores>div>div {
-    width: calc(50% - 17px);
+    width: 95%;
   }
   .realizacao.mentores>div>div {
-    width: calc(50% - 17px);
+    width: 95%;
   }
   .apoio.mentores>div>div {
-    width: calc(50% - 17px);
+    width: 95%;
   }
 }
