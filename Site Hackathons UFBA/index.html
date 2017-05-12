@@ -1,75 +1,133 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hackathon #EsquentaCPBA</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script language="javascript" src="js/jquery.js"></script>
-    <script language="javascript" src="js/script.js"></script>
-    <div class="logo-top">
-      <img src="img/marca.png" alt="" id="img-top"\>
-    </div>
-    <header>
-      <nav id="menu">
-        <ul>
-          <a href="#Sobre"><li>Sobre</li></a>
-          <a href="#Form"><li id="menu-chamada">Inscreva-se!</li></a>
-          <a href="#Como-Chegar"><li>Como Chegar</li></a>
-        </ul>
-      </nav>
-    </header>
-  </head>
-  <body>
-    <a name="Sobre"><section class="sobre"></a>
-          <h2>Sobre</h2>
-            <p>
-              O “Desafios Bahia Hackathon” é um evento inédito na Bahia e reunirá,
-              na forma de maratona de programação, hackers, programadores, desenvolvedores
-              e inventores, com o objetivo de promover o desenvolvimento de projetos
-              inovadores por meio de tecnologias digitais.
 
-              Em sua primeira edição traz a temática "Respeita as Mina", uma campanha
-              do Governo do Estado de combate a violência contra as mulheres.
-              Serão 33 horas ininterruptas de ideação e programação.
-            <img src="img/hackathon.jpg" alt="" id="img-hackathon">
-            </p>
-    </section>
-    <a name="Form"><section></a>
-      <div class="form">
-        <a class="typeform-share button" href="https://taianerc.typeform.com/to/B1rM28" data-mode="popup" id="form" target="_blank">Faça sua inscrição! </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
-      </div>
-    </section>
-    <a name="Como-Chegar"><section class="como-chegar"></a>
-      <h2>Como Chegar</h2>
-        <a href="https://www.google.com.br/maps/place/Instituto+de+Matem%C3%A1tica+e+Estat%C3%ADstica+da+UFBA/@-13.0011694,-38.5095745,17z/data=!3m1!4b1!4m5!3m4!1s0x716049fbfc20d8b:0x5a3ed51534624abc!8m2!3d-13.0011694!4d-38.5073858" target="_blank"> <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.541543995486!2d-38.50946719724427!3d-13.001148483220758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x716049fbfc20d8b%3A0x5a3ed51534624abc!2sInstituto+de+Matem%C3%A1tica+e+Estat%C3%ADstica+da+UFBA!5e0!3m2!1spt-BR!2sbr!4v1494373401734" width="100%" height="350px" frameborder="0" style="border:0" zoom="17" allowfullscreen></iframe>
-      </div> </a>
-    </section>
-    <section class="mentores">
-      <h2>Conheça o time!</h2>
-      <h3>Jurados</h3>
-      <h4>Monique Evelle</h4> <img src="img/Mentores/monique.jpg" alt="Monique Evelle" class="img-jurados">
-      <h3>Mentores</h3>
-      <div class="container-mentores">
-        <ul>
-          <div class="ft-nome">Samira Soares <img src="img/Mentores/samira.jpg" alt="Samira Soares" class="img-mentores"></div>
-          <div class="ft-nome">Juliana Fajardini <img src="img/Mentores/juliana.jpg" alt="Juliana Fajardini" class="img-mentores"></div>
-          <div class="ft-nome">Daniela Feitosa <img src="img/Mentores/daniela.jpg" alt="Daniela Feitosa" class="img-mentores"></div>
-          <div class="ft-nome">Lucas Santana <img src="img/Mentores/lucassantana.jpg" alt="Lucas Santana" class="img-mentores"></div>
-          <div class="ft-nome">André Argolo <img src="img/Mentores/argolo.jpg" alt="Lucas Santana" class="img-mentores"></div>
-          <div class="ft-nome">Lucas Ayres <img src="img/Mentores/lucasayres.jpg" alt="Lucas Santana" class="img-mentores"></div>
-          <div class="ft-nome">Vinicius Macedo <img src="img/Mentores/vinimacedo.jpg" alt="Lucas Santana" class="img-mentores"></div>
-          <div class="ft-nome">JP Rodrigues <img src="img/Mentores/jp.jpg" alt="Lucas Santana" class="img-mentores"></div>
-          <div class="ft-nome">Adson Vieira <img src="img/Mentores/adson.jpg" alt="Lucas Santana" class="img-mentores"></div>
-        </ul>
-      </div>
-    </section>
-    <footer>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
+  <title>Hackathon #EsquentaCPBA</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script language="javascript" src="js/jquery.js"></script>
+  <script language="javascript" src="js/script.js"></script>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <img src="img/marca.png" alt="Desafios Bahia Hackathon" \>
+    <nav>
+      <ul>
+        <a href="#Sobre">
+          <li>Sobre</li>
+        </a>
+        <a href="#Form">
+          <li id="inscreva-se">Inscreva-se!</li>
+        </a>
+        <a href="#Local">
+          <li>Local</li>
+        </a>
+      </ul>
+    </nav>
+  </header>
+
+  <a name="Sobre"></a>
+  <section class="sobre">
+    <h2>Sobre</h2>
+    <p>
+      O “Desafios Bahia Hackathon” é um evento inédito na Bahia e reunirá, na forma de maratona de programação, hackers, programadores, desenvolvedores e inventores, com o objetivo de promover o desenvolvimento de projetos inovadores por meio de tecnologias
+      digitais. Em sua primeira edição traz a temática "Respeita as Mina", uma campanha do Governo do Estado de combate a violência contra as mulheres. Serão 33 horas ininterruptas de ideação e programação.
+    </p>
+    <p>
+      <img src="img/hackathon.jpg" alt="Fotp de Hackathon">
+    </p>
+  </section>
+
+  <a name="Form"></a>
+  <section class="form">
+    <a class="typeform-share button" href="https://taianerc.typeform.com/to/B1rM28" data-mode="popup" id="inscricao" target="_blank">Faça sua inscrição! </a>
+  </section>
+
+  <a name="Local"></a>
+  <section class="como-chegar">
+    <h2>Como Chegar</h2>
+    <div class="map">
+      <a href="https://www.google.com.br/maps/place/Instituto+de+Matem%C3%A1tica+e+Estat%C3%ADstica+da+UFBA/@-13.0011694,-38.5095745,17z/data=!3m1!4b1!4m5!3m4!1s0x716049fbfc20d8b:0x5a3ed51534624abc!8m2!3d-13.0011694!4d-38.5073858" target="_blank">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.541543995486!2d-38.50946719724427!3d-13.001148483220758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x716049fbfc20d8b%3A0x5a3ed51534624abc!2sInstituto+de+Matem%C3%A1tica+e+Estat%C3%ADstica+da+UFBA!5e0!3m2!1spt-BR!2sbr!4v1494373401734"
+          width="100%" height="350px" frameborder="0" style="border:0" zoom="17" allowfullscreen></iframe></a>
+    </div>
+  </section>
+
+  <a name="Jurados"></a>
+  <section class="mentores">
+    <h2>Jurados</h2>
+    <div>
       <div>
-        <p id="by">Feito por: <a href="#">Vinícius Melo</a></h6>
-        <p> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />Este obra está licenciada com uma Licença <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Atribuição-CompartilhaIgual 4.0 Internacional</a>.</p>
+        <img src="img/Mentores/samira.jpg" alt="Monique Evelle"> Monique Evelle
       </div>
-    </footer>
-  </body>
+      <hr/>
+    </div>
+  </section>
+
+  <a name="Mentores"></a>
+  <section class="mentores">
+    <h2>Mentores</h2>
+    <div>
+      <div>
+        <img src="img/Mentores/samira.jpg" alt="Samira Soares"> Samira Soares
+      </div>
+      <div>
+        <img src="img/Mentores/juliana.jpg" alt="Juliana Fajardini"> Juliana Fajardini
+      </div>
+      <div>
+        <img src="img/Mentores/daniela.jpg" alt="Daniela Feitosa"> Daniela Feitosa
+      </div>
+      <div>
+        <img src="img/Mentores/lucassantana.jpg" alt="Lucas Santana"> Lucas Santana
+      </div>
+      <div>
+        <img src="img/Mentores/argolo.jpg" alt="Lucas Santana"> André Argolo
+      </div>
+      <div>
+        <img src="img/Mentores/lucasayres.jpg" alt="Lucas Santana"> Lucas Ayres
+      </div>
+      <div>
+        <img src="img/Mentores/vinimacedo.jpg" alt="Lucas Santana"> Vinicius Macedo
+      </div>
+      <div>
+        <img src="img/Mentores/jp.jpg" alt="Lucas Santana"> JP Rodrigues
+      </div>
+      <div>
+        <img src="img/Mentores/adson.jpg" alt="Lucas Santana"> Adson Vieira
+      </div>
+      <hr/>
+    </div>
+  </section>
+
+  <footer>
+    <p>
+      Feito por: <a>Vinícius Melo</a>
+      <br/><br/> Este obra está licenciada com uma Licença
+      <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Atribuição-CompartilhaIgual 4.0 Internacional</a>.
+    </p>
+  </footer>
+
+  <script>
+    (function() {
+      var qs, js, q, s, d = document,
+        gi = d.getElementById,
+        ce = d.createElement,
+        gt = d.getElementsByTagName,
+        id = "typef_orm_share",
+        b = "https://embed.typeform.com/";
+      if (!gi.call(d, id)) {
+        js = ce.call(d, "script");
+        js.id = id;
+        js.src = b + "embed.js";
+        q = gt.call(d, "script")[0];
+        q.parentNode.insertBefore(js, q)
+      }
+    })()
+  </script>
+</body>
+
 </html>
