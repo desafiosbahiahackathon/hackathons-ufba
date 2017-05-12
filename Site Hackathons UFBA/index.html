@@ -7,7 +7,6 @@
   <title>Hackathon #EsquentaCPBA</title>
   <link rel="stylesheet" href="css/style.css">
   <script language="javascript" src="js/jquery.js"></script>
-  <script language="javascript" src="js/script.js"></script>
 </head>
 
 <body>
@@ -15,7 +14,7 @@
   <!-- HEADER -->
   <header>
     <img src="img/marca.png" alt="Desafios Bahia Hackathon" \>
-    <nav>
+    <nav id="menu">
       <ul>
         <a href="#Sobre">
           <li>Sobre</li>
@@ -112,6 +111,17 @@
   </footer>
 
   <script>
+    $(function() {
+      var nav = $('#menu');
+      $(window).scroll(function() {
+        if ($(this).scrollTop() > 200) {
+          nav.addClass('small');
+        } else {
+          nav.removeClass('small');
+        }
+      });
+    });
+
     (function() {
       var qs, js, q, s, d = document,
         gi = d.getElementById,

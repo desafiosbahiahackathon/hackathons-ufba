@@ -205,6 +205,12 @@ footer a {
 
 /* END FOOTER */
 
+.small {
+  margin: 0;
+  position: fixed;
+  z-index: 2;
+}
+
 @media (max-width: 600px) {
   header img {
     width: 80%;
