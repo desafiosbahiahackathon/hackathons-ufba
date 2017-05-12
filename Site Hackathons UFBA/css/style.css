@@ -36,12 +36,12 @@ img {
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 40px;
   margin-top: 50px;
-  padding-bottom: 12px;
   font-weight: 900;
   padding: 20px;
-  padding-bottom: 0px;
+  padding-bottom: 12px;
+  padding-top: 30px;
   font-family: Montserrat-Regular;
 }
 
@@ -112,6 +112,7 @@ nav ul a {
   width: calc(50% - 3px);
   display: inline-block;
   vertical-align: text-top;
+  font-size: 130%;
 }
 
 .sobre img {
@@ -172,18 +173,31 @@ nav ul a {
 /* MENTORES */
 
 .mentores>div>div {
-  width: 150px;
+  width: 10%;
   text-align: center;
   display: inline-block;
-  margin: 10px 30px;
+  margin: 10px 2%;
+  margin-bottom: 2%;
 }
 
 .mentores>div>div img {
   border-radius: 10%;
 }
 
+.jurados.mentores>div>div {
+  width: 20%;
+}
+
 
 /* END MENTORES */
+
+.realizacao.mentores>div>div {
+  width: 25%;
+}
+
+.apoio.mentores>div>div {
+  width: 20%;
+}
 
 
 /* FOOTER */
@@ -223,5 +237,17 @@ footer a {
   }
   .form {
     width: 90%;
+  }
+  .mentores>div>div {
+    width: calc(50% - 17px);
+  }
+  .jurados.mentores>div>div {
+    width: calc(50% - 17px);
+  }
+  .realizacao.mentores>div>div {
+    width: calc(50% - 17px);
+  }
+  .apoio.mentores>div>div {
+    width: calc(50% - 17px);
   }
 }
