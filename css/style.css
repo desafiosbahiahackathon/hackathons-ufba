@@ -28,6 +28,7 @@
 html, body {
   height: 100%;
   background-color: #FFF;
+  font-family: Montserrat-Regular;
 }
 
 img {
@@ -97,7 +98,6 @@ nav ul a {
   font-family: Montserrat-SemiBold;
 }
 
-
 /* END HEADER */
 
 
@@ -143,6 +143,14 @@ nav ul a {
   box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
 }
 
+.typeform-popup-wrapper .typeform-close-icon {
+    position: absolute;
+    top: 12px!important;
+    margin-right: 55px!important;
+    padding: 8px;
+    width: 33px;
+    cursor: pointer;
+}
 
 /* END SOBRE */
 
@@ -200,6 +208,18 @@ nav ul a {
   width: 20%;
 }
 
+.img-jurados {
+  height: 250px;
+  width: auto;
+}
+
+.jurados p {
+  display: none;
+}
+
+.jurados:hover p {
+  display: block;
+}
 
 /* FOOTER */
 
@@ -224,6 +244,20 @@ footer a {
   margin: 0;
   position: fixed;
   z-index: 2;
+}
+
+.img-realiza {
+  height: 200px;
+  width: auto;
+}
+
+.img-apoio {
+  height: 100px;
+  width: auto;
+}
+
+#logo-soa, #logo-evelle {
+  height: 60px;
 }
 
 @media (max-width: 600px) {
