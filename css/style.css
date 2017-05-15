@@ -47,7 +47,7 @@ h2 {
 }
 
 p {
-  text-align: left;
+  text-align: justify;
   padding: 20px;
 }
 
@@ -98,6 +98,7 @@ nav ul a {
   font-family: Montserrat-SemiBold;
 }
 
+
 /* END HEADER */
 
 
@@ -129,11 +130,12 @@ nav ul a {
   line-height: 50px;
   text-align: center;
   margin: 0;
-  width: 100%;
+  width: 33%;
+  margin-left: 33%;
+  margin-right: 33%;
   height: 50px;
   padding: 0px 33px;
   border-radius: 25px;
-  max-width: 100%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -144,13 +146,14 @@ nav ul a {
 }
 
 .typeform-popup-wrapper .typeform-close-icon {
-    position: absolute;
-    top: 12px!important;
-    margin-right: 55px!important;
-    padding: 8px;
-    width: 33px;
-    cursor: pointer;
+  position: absolute;
+  top: 12px!important;
+  margin-right: 55px!important;
+  padding: 8px;
+  width: 33px;
+  cursor: pointer;
 }
+
 
 /* END SOBRE */
 
@@ -158,7 +161,7 @@ nav ul a {
 /* FORM */
 
 .form {
-  width: 30%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -180,8 +183,12 @@ nav ul a {
 
 /* MENTORES */
 
+.mentores {
+  margin-bottom: 100px;
+}
+
 .mentores>div>div {
-  width: 20%;
+  width: 12%;
   text-align: center;
   display: inline-block;
   margin: 10px 2%;
@@ -200,26 +207,43 @@ nav ul a {
 
 /* END MENTORES */
 
-.realizacao.mentores>div>div {
+.realizacao.mentores>div>div, .apoio>div>div {
   width: 25%;
+  vertical-align: middle;
+}
+
+.realizacao>div>div>img, .apoio>div>div>img {
+  max-height: 130px;
+  width: auto;
+  max-width: 180px;
 }
 
 .apoio.mentores>div>div {
-  width: 20%;
+  width: 25%;
 }
 
-.img-jurados {
-  height: 250px;
-  width: auto;
+.mentores.realizacao.parceiros>div>div {
+  width: calc(20% - 10px);
 }
 
-.jurados p {
+.mentores p, .jurados p {
   display: none;
 }
 
-.jurados:hover p {
-  display: block;
+.mentores>div>div:hover p {
+  /*display: block;*/
 }
+
+.mentores.mentor img {
+  -webkit-transition: width 0.2s;
+  transition: width 0.2s;
+  width: 100%;
+}
+
+.mentores.mentor img:hover {
+  width: 95%;
+}
+
 
 /* FOOTER */
 
@@ -248,11 +272,6 @@ footer a {
 
 .img-realiza {
   height: 200px;
-  width: auto;
-}
-
-.img-apoio {
-  height: 100px;
   width: auto;
 }
 
