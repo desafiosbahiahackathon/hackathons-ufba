@@ -11,9 +11,16 @@
 
       }
       #banner {
-        min-height: 650px;
+        height: 100%;
+        max-height: 800px;
         position: relative;
         background-image: url('assets/bg.png');
+      }
+
+      #banner img {
+        height: 40%;
+        width: auto;
+        margin-top: 25%;
       }
       .blanket {
         height: 100%;
@@ -22,34 +29,308 @@
         position: absolute;
         bottom: 0;
         right: 0;
-        background: linear-gradient(135deg, #E8B97C00,#110f0f, #110f0f);
+        background: linear-gradient(135deg, #E8B97C00 25%, #fffc, #fff);
         color: #FFF
       }
+      @font-face {
+        font-family: Montserrat-Regular;
+        src: url('fonts/Montserrat/Montserrat-Regular.ttf');
+      }
+
+      @font-face {
+        font-family: Montserrat-Bold;
+        src: url('fonts/Montserrat/Montserrat-Bold.ttf');
+      }
+
+      @font-face {
+        font-family: Montserrat-Light;
+        src: url('fonts/Montserrat/Montserrat-Light.ttf');
+      }
+
+      @font-face {
+        font-family: Montserrat-SemiBold;
+        src: url('fonts/Montserrat/Montserrat-SemiBold.ttf');
+      }
+
+      section:not(.full) main {
+        max-width: 1200px;
+      }
+       body {
+         font-family: Montserrat-Regular;
+       }
+      #helpers {
+        background-color: #FDE88E;
+      }
+      .helpers {
+        position: relative;
+        width: 160px;
+        height: 160px;
+      }
+
+      .helpers h3 {
+        position: absolute;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: #FFF;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+      }
+
+      .helpers img {
+        width: 100%;
+        height: 100%;
+        border-radius: 3px;
+      }
+
+      .by, .partner {
+        width: 23%;
+      }
+      .by img, .partner img {
+        width: 100%;
+      }
+      .gt-top-menu {
+        background-color: transparent;
+        font-size: 16px;
+      }
+      .gt-top-menu li:hover, .gt-top-menu li.active, .menu li:hover, .menu li.active {
+        border-color: #e41e26
+      }
+      /*.gt-top-menu */
     </style>
   </head>
   <body>
-    <header>
-
+    <header class="gt-top-menu xs-left fixed">
+      <img src="assets/img/gaintime.png" alt="" />
+      <label class="menu-toggle">
+        <svg viewBox="0 0 24 24">
+          <path fill="#333" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z"></path>
+        </svg>
+      </label>
+      <nav>
+        <ul>
+          <a href="#banner"><li>Início</li></a>
+          <a href="#about"><li>Sobre</li></a>
+          <a href="#helpers"><li>Mentores</li></a>
+          <a href="forms"><li>Formulários</li></a>
+          <a href="helpers"><li>Auxiliares</li></a>
+        </ul>
+      </nav>
     </header>
+
     <section id="banner">
       <div class="blanket flex-box">
-        <h1 class="centerex center">
-          Respeita as Mina!
-        </h1>
+        <img class="center" src="img/marca.png" />
+      </div>
+    </section>
+    <section class="text-center center">
+      <main class="center">
+        <h2>Saca só</h2>
+        <p>
+          O “Desafios Bahia Hackathon” é um evento inédito na Bahia e reunirá, na forma de maratona de programação, hackers, programadores, desenvolvedores e inventores, com o objetivo de promover o desenvolvimento de projetos inovadores por meio de tecnologias
+          digitais. Em sua primeira edição traz a temática "Respeita as Mina", uma campanha do Governo do Estado de combate a violência contra as mulheres. Serão 33 horas ininterruptas de ideação e programação.
+        </p>
+      </main>
+    </section>
+
+  <!-- <a name="Form"></a>
+  <section class="form">
+    <a class="typeform-share button" href="https://taianerc.typeform.com/to/B1rM28" data-mode="popup" id="inscricao" target="_blank">Faça sua inscrição! </a>
+    <a href="assets/Regulamento-DesafiosBahiaHackathon.pdf" id="inscricao" target="_blank">Regulamento </a>
+  </section>
+
+  <a name="Local"></a>
+  <section class="como-chegar">
+    <h2>// Local</h2>
+    <div class="map">
+      <a href="https://www.google.com.br/maps/place/Instituto+de+Matem%C3%A1tica+e+Estat%C3%ADstica+da+UFBA/@-13.0011694,-38.5095745,17z/data=!3m1!4b1!4m5!3m4!1s0x716049fbfc20d8b:0x5a3ed51534624abc!8m2!3d-13.0011694!4d-38.5073858" target="_blank">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.541543995486!2d-38.50946719724427!3d-13.001148483220758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x716049fbfc20d8b%3A0x5a3ed51534624abc!2sInstituto+de+Matem%C3%A1tica+e+Estat%C3%ADstica+da+UFBA!5e0!3m2!1spt-BR!2sbr!4v1494373401734"
+          width="100%" height="350px" frameborder="0" style="border:0" zoom="17" allowfullscreen></iframe></a>
+    </div>
+  </section> -->
+
+  <!-- <a name="Realizacao"></a> -->
+  <section id="helpers" class="center">
+    <main class="center">
+      <h2 class="text-center">Vai ter uma galera pra te ajudar!</h2>
+      <div>
+        <div class="helpers">
+          <img src="img/Mentores/samira.jpg" alt="Samira Soares">
+          <h3>Samira Soares</h3>
+          <div class="hidden">
+            <p>
+              é ativista do enegrecer, feminista interseccional, candomblecista e vlogueira no canal narrativas negras. Iniciei meu ativismo no movimento estudantil secundarista em Lençóis - Chapada diamantina e hoje atuo nas frentes de luta no combate ao racismo,
+              machismo e lgbtfobia questionando as estruturas da sociedade e buscando empoderar a juventude negra, periférica a reverter o processo de subalternização visibilizando as nossas narrativas negras e de resistência.
+            </p>
+          </div>
+        </div>
+        <div class="content-align no-margin">
+          <div class="helpers">
+            <img src="img/Mentores/juliana.jpg" alt="Juliana Fajardini" />
+            <h3>Juliana Fajardini</h3>
+            <div class="hidden">
+              <p>
+                é uma pessoa. É formada em Sistemas de Informação pela UNEB e há pelo menos 11 anos atua na área de tecnologia e, aos poucos, empreendedorismo. Foi integrante do Bahia Robotics Team e é cofundadora do #crossjoin. Trabalhou por dois anos no Programa de
+                Inclusão Sociodigital do Governo do Estado da Bahia e hoje é integrante do projeto OxenTI Menina!, que busca inspirar jovens mulheres de periferia através da programação e empreendedorismo. Além disso, tem mais algumas outras histórias pra contar.
+              </p>
+            </div>
+          </div>
+          <div class="helpers">
+            <img src="img/Mentores/daniela.jpg" alt="Daniela Feitosa" />
+            <h3>Daniela Feitosa</h3>
+            <div class="hidden">
+              <p>
+                Bacharel e Mestranda em Ciência da Computação pela Universidade Federal da Bahia (UFBA). Atualmente trabalha como desenvolvedora de software do Meedan (São Francisco/Califórnia/EUA). Participou do desenvolvimento do Noosfero, um software livre para criação
+                de redes sociais. É organizadora do Rails Girls Salvador, evento para aproximar mulheres da área de tecnologia da informação
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="content-align no-margin">
+          <div class="helpers">
+            <img src="img/Mentores/lucassantana.jpg" alt="Lucas Santana" />
+            <h3>Lucas Santana</h3>
+            <div class="hidden">
+              <p>
+                24, responsável pela área de marketing da Evelle Consultoria e sócio-proprietário da Kumasi, tem experiência com Inboud Marketing pela HubSpot e Gestão de Inovação pelo curso de extensão da USP. Lucas foi sócio da Dendê Marketing Digital e fez parte de
+                diversas startups como Talugo e Rizer, sempre trabalhando com crescimento online.
+              </p>
+            </div>
+          </div>
+          <div class="helpers">
+            <img src="img/Mentores/argolo.jpg" alt="André Argolo" />
+            <h3>André Argolo</h3>
+            <div class="hidden">
+              <p>
+                empreendedor baiano que faz questão de estar presente na comunidade startup e empreendedora de Salvador. Sócio fundador da StartOnApp, há pouco mais de 1 ano vem desenvolvendo um trabalho de liderança a frente da empresa, e recentemente, é vencedor do
+                Principal Hackathon da Campus Party 2017, São Paulo.
+              </p>
+            </div>
+          </div>
+          <div class="helpers">
+            <img src="img/Mentores/lucasayres.JPG" alt="Lucas Ayres" />
+            <h3>Lucas Ayres</h3>
+            <div class="hidden">
+              <p>
+                é graduando em Ciência da Computação pela Universidade Federal da Bahia. É Entusiasta e simpatizante da comunidade de Software Livre. Em 2013 virou membro voluntário do GRACO (Gestores da Rede Acadêmica de Computação do DCC). É Sócio e fundador da StartOnApp,
+                uma Agência de Tecnologia direcionada ao desenvolvimento de aplicativos, sistemas, sites e focada em inovação.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </section>
+  <section id="about">
+    <main class="center">
+      <h2></h2>
+      <div class="content-align text-center">
+        <div class="by">
+          <img src="img/Realização/ufba.jpg" alt="Universidade Federal da Bahia" />
+        </div>
+        <div class="by">
+          <img src="img/Realização/adminufba.jpg" alt="Escola de Administração UFBA" />
+        </div>
+        <div class="by">
+          <img src="img/Realização/dcc.png" alt="Departamento de Ciência da Computação" />
+        </div>
+        <div class="by">
+          <img src="img/Realização/Secti.jpg" alt="Secretaria de Ciência, Inovação e Tecnologia da Bahia" />
+        </div>
+        <div class="by">
+          <img src="img/Realização/MeninasDigitais.png" alt="Meninas Digitais Regional Bahia" />
+        </div>
+        <div class="by">
+          <img src="img/Realização/rondamariadapenha.png" alt="Ronda Maria da Penha" />
+        </div>
+        <hr/>
       </div>
 
-    </section>
-    <section>
+    </main>
+  </section>
 
-    </section>
-    <section>
+  <section>
+    <main class="center">
+      <h2>// Apoio</h2>
+      <div class="content-align">
+        <div class="partner">
+          <img src="img/Apoio/campus.png" alt="Campus Party" />
+        </div>
+        <div class="partner">
+          <img src="img/Apoio/sebrae.png" alt="Sebrae" />
+        </div>
+        <div class="partner">
+          <img src="img/Apoio/startonapp.svg" alt="StartOnApp" />
+        </div>
+        <div class="partner">
+          <img src="img/Apoio/evelle.png" alt="Evelle Consultoria" />
+        </div>
+        <div class="partner">
+          <img src="img/Apoio/desabafo.png" alt="Desabafo Social" />
+        </div>
+        <div class="partner">
+          <img src="img/Apoio/oxenti.jpg" alt="OxenTI Menina" />
+        </div>
+      </div>
+    </main>
+  </section>
+  <section class="jurados">
+    <h2>// Jurados</h2>
+    <div>
+      <div>
+        <img src="img/Mentores/monique.jpg" alt="Monique Evelle">
+        <h3>Monique Evelle</h3>
+        <p>reconhecida em 2017 pela revista Forbes e em 2015 pela revista Cláudia como uma dos 30 jovens com menos 30 anos mais promissores do país, criou a organização Desabafo Social e a Kumasi, marketplace para empreendedores afrodescendentes. Com 22
+          anos, Monique coleciona prêmios e participações em grandes eventos como TEDxRioVermelho, TEDxSãoPaulo, Social Good, Youth Business International, Prêmio Laureate Brasil, Simpósio da Universidade de Harvard, Conectados al Sur e mais. Através
+          da sua empresa, Evelle Consultoria, presta serviços de marketing e desenvolve metodologias educacionais para grandes organizações como Oxfam Brasil e Secretaria de Educação do Estado da Bahia. Ela é considerada a nova voz do feminismo negro,
+          pelo Estado, e está entre as 25 mulheres mais influentes da internet no Brasil. Atualmente, Monique integra a equipe do Profissão Repórter, da Rede Globo, e o Conselho Consultivo U-Report, da UNICEF.
+        </p>
+      </div>
+    </div>
+  </section>
 
-    </section>
-    <section>
+  <section class="realizacao parceiros">
+    <div>
+      <div>
+        <img src="img/Realização/Secti.jpg" alt="Secretaria de Ciência, Inovação e Tecnologia da Bahia">
+      </div>
+      <div>
+        <img src="img/Realização/AvatarSpm.jpg" alt="Secretaria de Políticas para as mulheres">
+      </div>
+      <div>
+        <img src="img/Realização/ufba.jpg" alt="Universidade Federal da Bahia">
+      </div>
+      <div>
+        <img src="img/Apoio/startonapp.svg" alt="StartOnApp">
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>
+      Feito por: <a href="https://twitter.com/_viniml" target="_blank">Vinícius Melo</a> e <a href="https://www.instagram.com/andre.argolo/" target="_blank">André Argolo</a>
+      <br/><br/> Este obra está licenciada com uma Licença
+      <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Atribuição-CompartilhaIgual 4.0 Internacional</a>.
+    </p>
+  </footer>
+  <script src="vendor/gainTime-2.1.2/js/gaintime.min.js"></script>
+  <script>
+    (function() {
+      var qs, js, q, s, d = document,
+        gi = d.getElementById,
+        ce = d.createElement,
+        gt = d.getElementsByTagName,
+        id = "typef_orm_share",
+        b = "https://embed.typeform.com/";
+      if (!gi.call(d, id)) {
+        js = ce.call(d, "script");
+        js.id = id;
+        js.src = b + "embed.js";
+        q = gt.call(d, "script")[0];
+        q.parentNode.insertBefore(js, q)
+      }
+    })()
+  </script>
+</body>
 
-    </section>
-    <footer>
-    </footer>
-    <script type="text/javascript" src="vendor/gainTime-2.1.2/js/gaintime.min.js"></script>
-  </body>
 </html>
