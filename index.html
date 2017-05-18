@@ -7,9 +7,7 @@
     <title>Minha página</title>
     <link rel="stylesheet" href="vendor/gainTime-2.1.2/css/gaintime.min.css" media ="screen" title="no title">
     <style media="screen">
-      .people {
 
-      }
       #banner {
         height: 100%;
         max-height: 800px;
@@ -18,10 +16,10 @@
       }
 
       #banner img {
-        height: 40%;
-        width: auto;
-        margin-top: 25%;
+        height: 35%;
+        margin: auto;
       }
+
       .blanket {
         height: 100%;
         width: 100%;
@@ -32,32 +30,20 @@
         background: linear-gradient(135deg, #E8B97C00 25%, #fffc, #fff);
         color: #FFF
       }
-      @font-face {
-        font-family: Montserrat-Regular;
-        src: url('fonts/Montserrat/Montserrat-Regular.ttf');
-      }
 
-      @font-face {
-        font-family: Montserrat-Bold;
-        src: url('fonts/Montserrat/Montserrat-Bold.ttf');
-      }
-
-      @font-face {
-        font-family: Montserrat-Light;
-        src: url('fonts/Montserrat/Montserrat-Light.ttf');
-      }
-
-      @font-face {
-        font-family: Montserrat-SemiBold;
-        src: url('fonts/Montserrat/Montserrat-SemiBold.ttf');
-      }
-
-      section:not(.full) main {
+      section main {
         max-width: 1200px;
       }
-       body {
-         font-family: Montserrat-Regular;
-       }
+
+      section h1 {
+        font-weight: lighter;
+        text-transform: uppercase;
+      }
+
+      body {
+       font-size: 16px;
+      }
+
       #helpers {
         background-color: #FDE88E;
       }
@@ -88,7 +74,8 @@
         width: 23%;
       }
       .by img, .partner img {
-        width: 100%;
+        max-width: 100%;
+        max-height: 180px
       }
       .gt-top-menu {
         background-color: transparent;
@@ -97,7 +84,7 @@
       .gt-top-menu li:hover, .gt-top-menu li.active, .menu li:hover, .menu li.active {
         border-color: #e41e26
       }
-      /*.gt-top-menu */
+
     </style>
   </head>
   <body>
@@ -126,11 +113,13 @@
     </section>
     <section class="text-center center">
       <main class="center">
-        <h2>Saca só</h2>
+        <h1>Saca só</h1>
         <p>
           O “Desafios Bahia Hackathon” é um evento inédito na Bahia e reunirá, na forma de maratona de programação, hackers, programadores, desenvolvedores e inventores, com o objetivo de promover o desenvolvimento de projetos inovadores por meio de tecnologias
           digitais. Em sua primeira edição traz a temática "Respeita as Mina", uma campanha do Governo do Estado de combate a violência contra as mulheres. Serão 33 horas ininterruptas de ideação e programação.
         </p>
+
+        <h1>33 HORAS ININTERRUPTAS DE PROGRAMAÇÃO</h1>
       </main>
     </section>
 
@@ -142,7 +131,7 @@
 
   <a name="Local"></a>
   <section class="como-chegar">
-    <h2>// Local</h2>
+    <h1>// Local</h1>
     <div class="map">
       <a href="https://www.google.com.br/maps/place/Instituto+de+Matem%C3%A1tica+e+Estat%C3%ADstica+da+UFBA/@-13.0011694,-38.5095745,17z/data=!3m1!4b1!4m5!3m4!1s0x716049fbfc20d8b:0x5a3ed51534624abc!8m2!3d-13.0011694!4d-38.5073858" target="_blank">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.541543995486!2d-38.50946719724427!3d-13.001148483220758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x716049fbfc20d8b%3A0x5a3ed51534624abc!2sInstituto+de+Matem%C3%A1tica+e+Estat%C3%ADstica+da+UFBA!5e0!3m2!1spt-BR!2sbr!4v1494373401734"
@@ -153,7 +142,7 @@
   <!-- <a name="Realizacao"></a> -->
   <section id="helpers" class="center">
     <main class="center">
-      <h2 class="text-center">Vai ter uma galera pra te ajudar!</h2>
+      <h1 class="text-center">Vai ter uma galera pra te ajudar!</h1>
       <div>
         <div class="helpers">
           <img src="img/Mentores/samira.jpg" alt="Samira Soares">
@@ -223,9 +212,9 @@
     </main>
   </section>
   <section id="about">
-    <main class="center">
-      <h2></h2>
-      <div class="content-align text-center">
+    <main class="center text-center">
+      <h1>Realização</h1>
+      <div class="content-align">
         <div class="by">
           <img src="img/Realização/ufba.jpg" alt="Universidade Federal da Bahia" />
         </div>
@@ -251,8 +240,8 @@
   </section>
 
   <section>
-    <main class="center">
-      <h2>// Apoio</h2>
+    <main class="center text-center">
+      <h1>Apoio</h1>
       <div class="content-align">
         <div class="partner">
           <img src="img/Apoio/campus.png" alt="Campus Party" />
@@ -276,7 +265,7 @@
     </main>
   </section>
   <section class="jurados">
-    <h2>// Jurados</h2>
+    <h1>// Jurados</h1>
     <div>
       <div>
         <img src="img/Mentores/monique.jpg" alt="Monique Evelle">
