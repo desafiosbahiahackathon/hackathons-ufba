@@ -1,0 +1,204 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install', '-g', 'jslinter' ]
+2 info using npm@3.10.10
+3 info using node@v6.10.3
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData jslinter
+8 silly fetchNamedPackageData jslinter
+9 silly mapToRegistry name jslinter
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'jslinter',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'jslinter',
+12 silly mapToRegistry   name: 'jslinter',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/jslinter
+14 verbose request uri https://registry.npmjs.org/jslinter
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 10:27:08
+17 verbose request id 4a230e116ced79a5
+18 verbose etag W/"58ece279-15ef3"
+19 verbose lastModified Tue, 11 Apr 2017 14:04:41 GMT
+20 http request GET https://registry.npmjs.org/jslinter
+21 http 304 https://registry.npmjs.org/jslinter
+22 verbose headers { date: 'Thu, 18 May 2017 13:27:09 GMT',
+22 verbose headers   via: '1.1 varnish',
+22 verbose headers   'cache-control': 'max-age=300',
+22 verbose headers   etag: 'W/"58ece279-15ef3"',
+22 verbose headers   age: '243',
+22 verbose headers   connection: 'keep-alive',
+22 verbose headers   'x-served-by': 'cache-gru7125-GRU',
+22 verbose headers   'x-cache': 'HIT',
+22 verbose headers   'x-cache-hits': '1',
+22 verbose headers   'x-timer': 'S1495114029.376826,VS0,VE0',
+22 verbose headers   vary: 'Accept-Encoding' }
+23 silly get cb [ 304,
+23 silly get   { date: 'Thu, 18 May 2017 13:27:09 GMT',
+23 silly get     via: '1.1 varnish',
+23 silly get     'cache-control': 'max-age=300',
+23 silly get     etag: 'W/"58ece279-15ef3"',
+23 silly get     age: '243',
+23 silly get     connection: 'keep-alive',
+23 silly get     'x-served-by': 'cache-gru7125-GRU',
+23 silly get     'x-cache': 'HIT',
+23 silly get     'x-cache-hits': '1',
+23 silly get     'x-timer': 'S1495114029.376826,VS0,VE0',
+23 silly get     vary: 'Accept-Encoding' } ]
+24 verbose etag https://registry.npmjs.org/jslinter from cache
+25 verbose get saving jslinter to /home/jprodrigues/.npm/registry.npmjs.org/jslinter/.cache.json
+26 verbose correctMkdir /home/jprodrigues/.npm correctMkdir not in flight; initializing
+27 silly install normalizeTree
+28 silly loadCurrentTree Finishing
+29 silly loadIdealTree Starting
+30 silly install loadIdealTree
+31 silly cloneCurrentTree Starting
+32 silly install cloneCurrentTreeToIdealTree
+33 silly cloneCurrentTree Finishing
+34 silly loadShrinkwrap Starting
+35 silly install loadShrinkwrap
+36 silly loadShrinkwrap Finishing
+37 silly loadAllDepsIntoIdealTree Starting
+38 silly install loadAllDepsIntoIdealTree
+39 silly resolveWithNewModule jslinter@1.5.19 checking installable status
+40 silly cache add args [ 'jslinter', null ]
+41 verbose cache add spec jslinter
+42 silly cache add parsed spec Result {
+42 silly cache add   raw: 'jslinter',
+42 silly cache add   scope: null,
+42 silly cache add   escapedName: 'jslinter',
+42 silly cache add   name: 'jslinter',
+42 silly cache add   rawSpec: '',
+42 silly cache add   spec: 'latest',
+42 silly cache add   type: 'tag' }
+43 silly addNamed jslinter@latest
+44 verbose addNamed "latest" is being treated as a dist-tag for jslinter
+45 info addNameTag [ 'jslinter', 'latest' ]
+46 silly mapToRegistry name jslinter
+47 silly mapToRegistry using default registry
+48 silly mapToRegistry registry https://registry.npmjs.org/
+49 silly mapToRegistry data Result {
+49 silly mapToRegistry   raw: 'jslinter',
+49 silly mapToRegistry   scope: null,
+49 silly mapToRegistry   escapedName: 'jslinter',
+49 silly mapToRegistry   name: 'jslinter',
+49 silly mapToRegistry   rawSpec: '',
+49 silly mapToRegistry   spec: 'latest',
+49 silly mapToRegistry   type: 'tag' }
+50 silly mapToRegistry uri https://registry.npmjs.org/jslinter
+51 verbose addNameTag registry:https://registry.npmjs.org/jslinter not in flight; fetching
+52 verbose get https://registry.npmjs.org/jslinter not expired, no request
+53 silly addNameTag next cb for jslinter with tag latest
+54 silly addNamed jslinter@1.5.19
+55 verbose addNamed "1.5.19" is a plain semver version for jslinter
+56 silly cache afterAdd jslinter@1.5.19
+57 verbose afterAdd /home/jprodrigues/.npm/jslinter/1.5.19/package/package.json not in flight; writing
+58 verbose correctMkdir /home/jprodrigues/.npm correctMkdir not in flight; initializing
+59 verbose afterAdd /home/jprodrigues/.npm/jslinter/1.5.19/package/package.json written
+60 silly loadAllDepsIntoIdealTree Finishing
+61 silly loadIdealTree Finishing
+62 silly currentTree lib
+63 silly idealTree lib
+63 silly idealTree └── jslinter@1.5.19
+64 silly generateActionsToTake Starting
+65 silly install generateActionsToTake
+66 silly generateActionsToTake Finishing
+67 silly diffTrees action count 1
+68 silly diffTrees add jslinter@1.5.19
+69 silly decomposeActions action count 8
+70 silly decomposeActions fetch jslinter@1.5.19
+71 silly decomposeActions extract jslinter@1.5.19
+72 silly decomposeActions test jslinter@1.5.19
+73 silly decomposeActions preinstall jslinter@1.5.19
+74 silly decomposeActions build jslinter@1.5.19
+75 silly decomposeActions install jslinter@1.5.19
+76 silly decomposeActions postinstall jslinter@1.5.19
+77 silly decomposeActions finalize jslinter@1.5.19
+78 silly runTopLevelLifecycles Starting
+79 silly executeActions Starting
+80 silly install executeActions
+81 silly doSerial global-install 0
+82 silly doParallel fetch 1
+83 verbose correctMkdir /home/jprodrigues/.npm/_locks correctMkdir not in flight; initializing
+84 verbose lock using /home/jprodrigues/.npm/_locks/staging-2e478f9d94d1ef0e.lock for /home/jprodrigues/.npm-global/lib/node_modules/.staging
+85 silly doParallel extract 1
+86 silly extract jslinter@1.5.19
+87 verbose unbuild lib/node_modules/.staging/jslinter-79f7ce1c
+88 silly gentlyRm /home/jprodrigues/.npm-global/lib/node_modules/.staging/jslinter-79f7ce1c is being purged from base /home/jprodrigues/.npm-global
+89 verbose gentlyRm don't care about contents; nuking /home/jprodrigues/.npm-global/lib/node_modules/.staging/jslinter-79f7ce1c
+90 verbose tar unpack /home/jprodrigues/.npm/jslinter/1.5.19/package.tgz
+91 verbose tar unpacking to /home/jprodrigues/.npm-global/lib/node_modules/.staging/jslinter-79f7ce1c
+92 silly gentlyRm /home/jprodrigues/.npm-global/lib/node_modules/.staging/jslinter-79f7ce1c is being purged
+93 verbose gentlyRm don't care about contents; nuking /home/jprodrigues/.npm-global/lib/node_modules/.staging/jslinter-79f7ce1c
+94 silly gunzTarPerm modes [ '775', '664' ]
+95 silly gunzTarPerm extractEntry package.json
+96 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+97 silly gunzTarPerm extractEntry README.md
+98 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+99 silly gunzTarPerm extractEntry LICENSE
+100 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+101 silly gunzTarPerm extractEntry index.js
+102 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+103 silly gunzTarPerm extractEntry completion/jslint.bash
+104 silly gunzTarPerm modified mode [ 'completion/jslint.bash', 420, 436 ]
+105 silly gunzTarPerm extractEntry jslint
+106 silly gunzTarPerm modified mode [ 'jslint', 493, 509 ]
+107 silly gunzTarPerm extractEntry lib/jslint.js
+108 silly gunzTarPerm modified mode [ 'lib/jslint.js', 420, 436 ]
+109 silly gunzTarPerm extractEntry CHANGELOG.md
+110 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 420, 436 ]
+111 silly gentlyRm /home/jprodrigues/.npm-global/lib/node_modules/.staging/jslinter-79f7ce1c/node_modules is being purged
+112 verbose gentlyRm don't care about contents; nuking /home/jprodrigues/.npm-global/lib/node_modules/.staging/jslinter-79f7ce1c/node_modules
+113 silly doParallel preinstall 1
+114 silly preinstall jslinter@1.5.19 /home/jprodrigues/.npm-global/lib/node_modules/.staging/jslinter-79f7ce1c
+115 info lifecycle jslinter@1.5.19~preinstall: jslinter@1.5.19
+116 silly lifecycle jslinter@1.5.19~preinstall: no script for preinstall, continuing
+117 silly doReverseSerial remove 0
+118 silly doSerial move 0
+119 silly doSerial finalize 1
+120 silly finalize /home/jprodrigues/.npm-global/lib/node_modules/jslinter
+121 silly doSerial build 1
+122 silly build jslinter@1.5.19
+123 info linkStuff jslinter@1.5.19
+124 silly linkStuff jslinter@1.5.19 has /home/jprodrigues/.npm-global/lib/node_modules as its parent node_modules
+125 silly linkStuff jslinter@1.5.19 is part of a global install
+126 silly linkStuff jslinter@1.5.19 is installed into a global node_modules
+127 silly linkStuff jslinter@1.5.19 is installed into the top-level global node_modules
+128 verbose linkBins jslinter@1.5.19
+129 verbose link bins [ { jslint: 'jslint' },
+129 verbose link bins   '/home/jprodrigues/.npm-global/bin',
+129 verbose link bins   true ]
+130 verbose linkMans jslinter@1.5.19
+131 silly gentlyRm /home/jprodrigues/.npm-global/bin/jslint is being gently removed
+132 verbose unlock done using /home/jprodrigues/.npm/_locks/staging-2e478f9d94d1ef0e.lock for /home/jprodrigues/.npm-global/lib/node_modules/.staging
+133 silly rollbackFailedOptional Starting
+134 silly rollbackFailedOptional Finishing
+135 silly runTopLevelLifecycles Finishing
+136 silly install printInstalled
+137 verbose stack Error: EACCES: permission denied, symlink '../lib/node_modules/jslinter/jslint' -> '/home/jprodrigues/.npm-global/bin/jslint'
+137 verbose stack     at Error (native)
+138 verbose cwd /var/www/html/hackathons-ufba
+139 error Linux 3.13.0-117-generic
+140 error argv "/usr/bin/nodejs" "/usr/bin/npm" "install" "-g" "jslinter"
+141 error node v6.10.3
+142 error npm  v3.10.10
+143 error path ../lib/node_modules/jslinter/jslint
+144 error code EACCES
+145 error errno -13
+146 error syscall symlink
+147 error Error: EACCES: permission denied, symlink '../lib/node_modules/jslinter/jslint' -> '/home/jprodrigues/.npm-global/bin/jslint'
+147 error     at Error (native)
+147 error  { Error: EACCES: permission denied, symlink '../lib/node_modules/jslinter/jslint' -> '/home/jprodrigues/.npm-global/bin/jslint'
+147 error     at Error (native)
+147 error   errno: -13,
+147 error   code: 'EACCES',
+147 error   syscall: 'symlink',
+147 error   path: '../lib/node_modules/jslinter/jslint',
+147 error   dest: '/home/jprodrigues/.npm-global/bin/jslint' }
+148 error Please try running this command again as root/Administrator.
+149 verbose exit [ -13, true ]
