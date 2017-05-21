@@ -1,46 +1,129 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Minha página</title>
+    <link rel="stylesheet" href="vendor/gainTime-2.1.2/css/gaintime.min.css" media ="screen" title="no title">
+    <style media="screen">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
-  <title>Hackathon #EsquentaCPBA</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script language="javascript" src="js/jquery.js"></script>
-  <link rel="shortcut icon" type="image/png" href="favicon.png" />
-</head>
+      #banner {
+        height: 100%;
+        max-height: 800px;
+        position: relative;
+        background-image: url('assets/bg.png');
+      }
 
-<body>
-  <header>
-    <img src="img/marca.png" alt="Desafios Bahia Hackathon" \>
-    <nav id="menu">
-      <ul>
-        <a href="#Sobre">
-          <li>Sobre</li>
-        </a>
-        <a href="#Form">
-          <li id="inscreva-se">Inscreva-se!</li>
-        </a>
-        <a href="#Local">
-          <li>Local</li>
-        </a>
-      </ul>
-    </nav>
-  </header>
+      #banner img {
+        height: 35%;
+        margin: auto;
+      }
 
-  <a name="Sobre"></a>
-  <section class="sobre">
-    <h2>// Sobre</h2>
-    <p>
-      O “Desafios Bahia Hackathon” é um evento inédito na Bahia e reunirá, na forma de maratona de programação, hackers, programadores, desenvolvedores e inventores, com o objetivo de promover o desenvolvimento de projetos inovadores por meio de tecnologias
-      digitais. Em sua primeira edição traz a temática "Respeita as Mina", uma campanha do Governo do Estado de combate a violência contra as mulheres. Serão 33 horas ininterruptas de ideação e programação.
-    </p>
-    <p>
-      <img src="img/hackathon.jpg" alt="Fotp de Hackathon">
-    </p>
-  </section>
+      .blanket {
+        height: 100%;
+        width: 100%;
+        transition: rotate(45deg);
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background: linear-gradient(135deg, #E8B97C00 25%, #fffc, #fff);
+        color: #FFF
+      }
 
-  <a name="Form"></a>
+      section main {
+        max-width: 1200px;
+      }
+
+      section h1 {
+        font-weight: lighter;
+        text-transform: uppercase;
+      }
+
+      body {
+       font-size: 16px;
+      }
+
+      #helpers {
+        background-color: #FDE88E;
+      }
+      .helpers {
+        position: relative;
+        width: 160px;
+        height: 160px;
+      }
+
+      .helpers h3 {
+        position: absolute;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: #FFF;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+      }
+
+      .helpers img {
+        width: 100%;
+        height: 100%;
+        border-radius: 3px;
+      }
+
+      .by, .partner {
+        width: 23%;
+      }
+      .by img, .partner img {
+        max-width: 100%;
+        max-height: 180px
+      }
+      .gt-top-menu {
+        background-color: transparent;
+        font-size: 16px;
+      }
+      .gt-top-menu li:hover, .gt-top-menu li.active, .menu li:hover, .menu li.active {
+        border-color: #e41e26
+      }
+
+    </style>
+  </head>
+  <body>
+    <header class="gt-top-menu xs-left fixed">
+      <img src="assets/img/gaintime.png" alt="" />
+      <label class="menu-toggle">
+        <svg viewBox="0 0 24 24">
+          <path fill="#333" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z"></path>
+        </svg>
+      </label>
+      <nav>
+        <ul>
+          <a href="#banner"><li>Início</li></a>
+          <a href="#about"><li>Sobre</li></a>
+          <a href="#helpers"><li>Mentores</li></a>
+          <a href="forms"><li>Formulários</li></a>
+          <a href="helpers"><li>Auxiliares</li></a>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="banner">
+      <div class="blanket flex-box">
+        <img class="center" src="img/marca.png" />
+      </div>
+    </section>
+    <section class="text-center center">
+      <main class="center">
+        <h1>Saca só</h1>
+        <p>
+          O “Desafios Bahia Hackathon” é um evento inédito na Bahia e reunirá, na forma de maratona de programação, hackers, programadores, desenvolvedores e inventores, com o objetivo de promover o desenvolvimento de projetos inovadores por meio de tecnologias
+          digitais. Em sua primeira edição traz a temática "Respeita as Mina", uma campanha do Governo do Estado de combate a violência contra as mulheres. Serão 33 horas ininterruptas de ideação e programação.
+        </p>
+
+        <h1>33 HORAS ININTERRUPTAS DE PROGRAMAÇÃO</h1>
+      </main>
+    </section>
+
+  <!-- <a name="Form"></a>
   <section class="form">
     <a class="typeform-share button" href="https://taianerc.typeform.com/to/B1rM28" data-mode="popup" id="inscricao" target="_blank">Faça sua inscrição! </a>
     <a href="assets/Regulamento-DesafiosBahiaHackathon.pdf" id="inscricao" target="_blank">Regulamento </a>
@@ -48,68 +131,141 @@
 
   <a name="Local"></a>
   <section class="como-chegar">
-    <h2>// Local</h2>
+    <h1>// Local</h1>
     <div class="map">
       <a href="https://www.google.com.br/maps/place/Instituto+de+Matem%C3%A1tica+e+Estat%C3%ADstica+da+UFBA/@-13.0011694,-38.5095745,17z/data=!3m1!4b1!4m5!3m4!1s0x716049fbfc20d8b:0x5a3ed51534624abc!8m2!3d-13.0011694!4d-38.5073858" target="_blank">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.541543995486!2d-38.50946719724427!3d-13.001148483220758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x716049fbfc20d8b%3A0x5a3ed51534624abc!2sInstituto+de+Matem%C3%A1tica+e+Estat%C3%ADstica+da+UFBA!5e0!3m2!1spt-BR!2sbr!4v1494373401734"
           width="100%" height="350px" frameborder="0" style="border:0" zoom="17" allowfullscreen></iframe></a>
     </div>
+  </section> -->
+
+  <!-- <a name="Realizacao"></a> -->
+  <section id="helpers" class="center">
+    <main class="center">
+      <h1 class="text-center">Vai ter uma galera pra te ajudar!</h1>
+      <div>
+        <div class="helpers">
+          <img src="img/Mentores/samira.jpg" alt="Samira Soares">
+          <h3>Samira Soares</h3>
+          <div class="hidden">
+            <p>
+              é ativista do enegrecer, feminista interseccional, candomblecista e vlogueira no canal narrativas negras. Iniciei meu ativismo no movimento estudantil secundarista em Lençóis - Chapada diamantina e hoje atuo nas frentes de luta no combate ao racismo,
+              machismo e lgbtfobia questionando as estruturas da sociedade e buscando empoderar a juventude negra, periférica a reverter o processo de subalternização visibilizando as nossas narrativas negras e de resistência.
+            </p>
+          </div>
+        </div>
+        <div class="content-align no-margin">
+          <div class="helpers">
+            <img src="img/Mentores/juliana.jpg" alt="Juliana Fajardini" />
+            <h3>Juliana Fajardini</h3>
+            <div class="hidden">
+              <p>
+                é uma pessoa. É formada em Sistemas de Informação pela UNEB e há pelo menos 11 anos atua na área de tecnologia e, aos poucos, empreendedorismo. Foi integrante do Bahia Robotics Team e é cofundadora do #crossjoin. Trabalhou por dois anos no Programa de
+                Inclusão Sociodigital do Governo do Estado da Bahia e hoje é integrante do projeto OxenTI Menina!, que busca inspirar jovens mulheres de periferia através da programação e empreendedorismo. Além disso, tem mais algumas outras histórias pra contar.
+              </p>
+            </div>
+          </div>
+          <div class="helpers">
+            <img src="img/Mentores/daniela.jpg" alt="Daniela Feitosa" />
+            <h3>Daniela Feitosa</h3>
+            <div class="hidden">
+              <p>
+                Bacharel e Mestranda em Ciência da Computação pela Universidade Federal da Bahia (UFBA). Atualmente trabalha como desenvolvedora de software do Meedan (São Francisco/Califórnia/EUA). Participou do desenvolvimento do Noosfero, um software livre para criação
+                de redes sociais. É organizadora do Rails Girls Salvador, evento para aproximar mulheres da área de tecnologia da informação
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="content-align no-margin">
+          <div class="helpers">
+            <img src="img/Mentores/lucassantana.jpg" alt="Lucas Santana" />
+            <h3>Lucas Santana</h3>
+            <div class="hidden">
+              <p>
+                24, responsável pela área de marketing da Evelle Consultoria e sócio-proprietário da Kumasi, tem experiência com Inboud Marketing pela HubSpot e Gestão de Inovação pelo curso de extensão da USP. Lucas foi sócio da Dendê Marketing Digital e fez parte de
+                diversas startups como Talugo e Rizer, sempre trabalhando com crescimento online.
+              </p>
+            </div>
+          </div>
+          <div class="helpers">
+            <img src="img/Mentores/argolo.jpg" alt="André Argolo" />
+            <h3>André Argolo</h3>
+            <div class="hidden">
+              <p>
+                empreendedor baiano que faz questão de estar presente na comunidade startup e empreendedora de Salvador. Sócio fundador da StartOnApp, há pouco mais de 1 ano vem desenvolvendo um trabalho de liderança a frente da empresa, e recentemente, é vencedor do
+                Principal Hackathon da Campus Party 2017, São Paulo.
+              </p>
+            </div>
+          </div>
+          <div class="helpers">
+            <img src="img/Mentores/lucasayres.JPG" alt="Lucas Ayres" />
+            <h3>Lucas Ayres</h3>
+            <div class="hidden">
+              <p>
+                é graduando em Ciência da Computação pela Universidade Federal da Bahia. É Entusiasta e simpatizante da comunidade de Software Livre. Em 2013 virou membro voluntário do GRACO (Gestores da Rede Acadêmica de Computação do DCC). É Sócio e fundador da StartOnApp,
+                uma Agência de Tecnologia direcionada ao desenvolvimento de aplicativos, sistemas, sites e focada em inovação.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </section>
+  <section id="about">
+    <main class="center text-center">
+      <h1>Realização</h1>
+      <div class="content-align">
+        <div class="by">
+          <img src="img/Realização/ufba.jpg" alt="Universidade Federal da Bahia" />
+        </div>
+        <div class="by">
+          <img src="img/Realização/adminufba.jpg" alt="Escola de Administração UFBA" />
+        </div>
+        <div class="by">
+          <img src="img/Realização/dcc.png" alt="Departamento de Ciência da Computação" />
+        </div>
+        <div class="by">
+          <img src="img/Realização/Secti.jpg" alt="Secretaria de Ciência, Inovação e Tecnologia da Bahia" />
+        </div>
+        <div class="by">
+          <img src="img/Realização/MeninasDigitais.png" alt="Meninas Digitais Regional Bahia" />
+        </div>
+        <div class="by">
+          <img src="img/Realização/rondamariadapenha.png" alt="Ronda Maria da Penha" />
+        </div>
+        <hr/>
+      </div>
+
+    </main>
   </section>
 
-  <a name="Realizacao"></a>
-  <section class="mentores realizacao">
-    <h2>// Realização</h2>
-    <div>
-      <div>
-        <img src="img/Realização/ufba.jpg" alt="Universidade Federal da Bahia" />
+  <section>
+    <main class="center text-center">
+      <h1>Apoio</h1>
+      <div class="content-align">
+        <div class="partner">
+          <img src="img/Apoio/campus.png" alt="Campus Party" />
+        </div>
+        <div class="partner">
+          <img src="img/Apoio/sebrae.png" alt="Sebrae" />
+        </div>
+        <div class="partner">
+          <img src="img/Apoio/startonapp.svg" alt="StartOnApp" />
+        </div>
+        <div class="partner">
+          <img src="img/Apoio/evelle.png" alt="Evelle Consultoria" />
+        </div>
+        <div class="partner">
+          <img src="img/Apoio/desabafo.png" alt="Desabafo Social" />
+        </div>
+        <div class="partner">
+          <img src="img/Apoio/oxenti.jpg" alt="OxenTI Menina" />
+        </div>
       </div>
-      <div>
-        <img src="img/Realização/adminufba.jpg" alt="Escola de Administração UFBA" />
-      </div>
-      <div>
-        <img src="img/Realização/dcc.png" alt="Departamento de Ciência da Computação" />
-      </div>
-      <div>
-        <img src="img/Realização/Secti.jpg" alt="Secretaria de Ciência, Inovação e Tecnologia da Bahia" />
-      </div>
-      <div>
-        <img src="img/Realização/MeninasDigitais.png" alt="Meninas Digitais Regional Bahia" />
-      </div>
-      <div>
-        <img src="img/Realização/rondamariadapenha.png" alt="Ronda Maria da Penha" />
-      </div>
-      <hr/>
-    </div>
+    </main>
   </section>
-
-  <a name="Apoio"></a>
-  <section class="mentores realizacao">
-    <h2>// Apoio</h2>
-    <div>
-      <div>
-        <img src="img/Apoio/campus.png" alt="Campus Party" />
-      </div>
-      <div>
-        <img src="img/Apoio/sebrae.png" alt="Sebrae" />
-      </div>
-      <div>
-        <img src="img/Apoio/startonapp.svg" alt="StartOnApp" />
-      </div>
-      <div>
-        <img src="img/Apoio/evelle.png" alt="Evelle Consultoria" />
-      </div>
-      <div>
-        <img src="img/Apoio/desabafo.png" alt="Desabafo Social" />
-      </div>
-      <div>
-        <img src="img/Apoio/oxenti.jpg" alt="OxenTI Menina" />
-      </div>
-    </div>
-  </section>
-
-  <a name="Jurados"></a>
-  <section class="mentores jurados">
-    <h2>// Jurados</h2>
+  <section class="jurados">
+    <h1>// Jurados</h1>
     <div>
       <div>
         <img src="img/Mentores/monique.jpg" alt="Monique Evelle">
@@ -123,7 +279,7 @@
     </div>
   </section>
 
-  <section class="mentores realizacao parceiros">
+  <section class="realizacao parceiros">
     <div>
       <div>
         <img src="img/Realização/Secti.jpg" alt="Secretaria de Ciência, Inovação e Tecnologia da Bahia">
@@ -139,87 +295,6 @@
       </div>
     </div>
   </section>
-
-  <a name="Mentores"></a>
-  <section class="mentores mentor">
-    <h2>// Mentores</h2>
-    <div>
-      <div>
-        <img src="img/Mentores/samira.jpg" alt="Samira Soares">
-        <h3>Samira Soares</h3>
-        <p>
-          é ativista do enegrecer, feminista interseccional, candomblecista e vlogueira no canal narrativas negras. Iniciei meu ativismo no movimento estudantil secundarista em Lençóis - Chapada diamantina e hoje atuo nas frentes de luta no combate ao racismo,
-          machismo e lgbtfobia questionando as estruturas da sociedade e buscando empoderar a juventude negra, periférica a reverter o processo de subalternização visibilizando as nossas narrativas negras e de resistência.
-        </p>
-      </div>
-      <div>
-        <img src="img/Mentores/juliana.jpg" alt="Juliana Fajardini" />
-        <h3>Juliana Fajardini</h3>
-        <p>
-          é uma pessoa. É formada em Sistemas de Informação pela UNEB e há pelo menos 11 anos atua na área de tecnologia e, aos poucos, empreendedorismo. Foi integrante do Bahia Robotics Team e é cofundadora do #crossjoin. Trabalhou por dois anos no Programa de
-          Inclusão Sociodigital do Governo do Estado da Bahia e hoje é integrante do projeto OxenTI Menina!, que busca inspirar jovens mulheres de periferia através da programação e empreendedorismo. Além disso, tem mais algumas outras histórias pra contar.
-        </p>
-      </div>
-      <div>
-        <img src="img/Mentores/daniela.jpg" alt="Daniela Feitosa" />
-        <h3>Daniela Feitosa</h3>
-        <p>
-          Bacharel e Mestranda em Ciência da Computação pela Universidade Federal da Bahia (UFBA). Atualmente trabalha como desenvolvedora de software do Meedan (São Francisco/Califórnia/EUA). Participou do desenvolvimento do Noosfero, um software livre para criação
-          de redes sociais. É organizadora do Rails Girls Salvador, evento para aproximar mulheres da área de tecnologia da informação
-        </p>
-      </div>
-      <div>
-        <img src="img/Mentores/lucassantana.jpg" alt="Lucas Santana" />
-        <h3>Lucas Santana</h3>
-        <p>
-          24, responsável pela área de marketing da Evelle Consultoria e sócio-proprietário da Kumasi, tem experiência com Inboud Marketing pela HubSpot e Gestão de Inovação pelo curso de extensão da USP. Lucas foi sócio da Dendê Marketing Digital e fez parte de
-          diversas startups como Talugo e Rizer, sempre trabalhando com crescimento online.
-        </p>
-      </div>
-      <div>
-        <img src="img/Mentores/argolo.jpg" alt="André Argolo" />
-        <h3>André Argolo</h3>
-        <p>
-          empreendedor baiano que faz questão de estar presente na comunidade startup e empreendedora de Salvador. Sócio fundador da StartOnApp, há pouco mais de 1 ano vem desenvolvendo um trabalho de liderança a frente da empresa, e recentemente, é vencedor do
-          Principal Hackathon da Campus Party 2017, São Paulo.
-        </p>
-      </div>
-      <div>
-        <img src="img/Mentores/lucasayres.JPG" alt="Lucas Ayres" />
-        <h3>Lucas Ayres</h3>
-        <p>
-          é graduando em Ciência da Computação pela Universidade Federal da Bahia. É Entusiasta e simpatizante da comunidade de Software Livre. Em 2013 virou membro voluntário do GRACO (Gestores da Rede Acadêmica de Computação do DCC). É Sócio e fundador da StartOnApp,
-          uma Agência de Tecnologia direcionada ao desenvolvimento de aplicativos, sistemas, sites e focada em inovação.
-        </p>
-      </div>
-      <!-- <div>
-        <img src="img/Mentores/vinimacedo.jpg" alt="Vinicius Macedo" />
-        <h3>Vinicius Macedo</h3>
-        <p>
-          é graduando em Ciência da Computação na Universidade Federal da Bahia, participou do GRACO (Gestores da Rede Acadêmica de Computação). É programador e sócio da StartOnApp, Agência de Tecnologia e Inovação direcionada ao desenvolvimento de aplicativos
-          iOS, Android e Web.
-        </p>
-      </div>
-      <div>
-        <img src="img/Mentores/jp.jpg" alt="JP Rodrigues" />
-        <h3>JP Rodrigues</h3>
-        <p>
-          é técnico aposentado em redes de computadores, desenvolvedor web e de aplicativos. Atualmente trabalha como desenvolvedor na StartOnApp e na InfoJr UFBA, onde iniciou sua trajetória e mantém por quase 3 anos o título de membro que mais desenvolveu
-          projetos. HTML, CSS e JavaScript são suas ferramentas favoritas, mas um pouco de BackEnd mantém a saúde equilibrada. Fã de desenvolvimento web limpo (menos pode ser mais).
-        </p>
-      </div>
-      <div>
-        <img src="img/Mentores/adson.jpg" alt="Adson Vieira" />
-        <h3>Adson Vieira</h3>
-        <p>
-          técnico em informática pelo SENAI CIMATEC e graduando em Sistemas de informação pela Universidade Salvador, é desenvolvedor full stack na StartOnApp e entusiasta de software livre. Vencedor do Hackathon da Visa que ocorreu em São Paulo no início do
-          ano, dedica a maior parte do seu tempo ao desenvolvimento web e estudos em diversas áreas de computação.
-        </p>
-      </div> -->
-      <hr/>
-    </div>
-  </section>
-
   <footer>
     <p>
       Feito por: <a href="https://twitter.com/_viniml" target="_blank">Vinícius Melo</a> e <a href="https://www.instagram.com/andre.argolo/" target="_blank">André Argolo</a>
@@ -227,18 +302,8 @@
       <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Atribuição-CompartilhaIgual 4.0 Internacional</a>.
     </p>
   </footer>
-
+  <script src="vendor/gainTime-2.1.2/js/gaintime.min.js"></script>
   <script>
-    $(function() {
-      var nav = $('#menu');
-      $(window).scroll(function() {
-        if ($(this).scrollTop() > 200) {
-          nav.addClass('small');
-        } else {
-          nav.removeClass('small');
-        }
-      });
-    });
     (function() {
       var qs, js, q, s, d = document,
         gi = d.getElementById,
