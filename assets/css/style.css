@@ -4,9 +4,9 @@ body {
 
 header.white-bg {
   background-color: #FFF!important;
-  box-shadow: 0px 0px 4px 0px rgba(50,50,50,0.4)!important;
-  -moz-box-shadow: 0px 0px 4px 0px rgba(50,50,50,0.4)!important;
-  -webkit-box-shadow: 0px 0px 4px 0px rgba(50,50,50,0.4)!important;
+  box-shadow: 0px 0px 4px 0px rgba(50, 50, 50, 0.4)!important;
+  -moz-box-shadow: 0px 0px 4px 0px rgba(50, 50, 50, 0.4)!important;
+  -webkit-box-shadow: 0px 0px 4px 0px rgba(50, 50, 50, 0.4)!important;
 }
 
 header.white-bg img {
@@ -29,6 +29,7 @@ header img {
 #about h2 {
   font-weight: lighter;
 }
+
 #banner {
   height: 100%;
   max-height: 700px;
@@ -44,9 +45,11 @@ header img {
   color: #333;
   max-width: 100%;
 }
+
 .banner-content h1 {
   margin: 5px;
 }
+
 .banner-content img {
   max-height: 70%;
   max-width: 100%;
@@ -59,9 +62,12 @@ header img {
   bottom: 0;
   right: 0;
   background: linear-gradient(312deg, transparent 25%, RGBA(179, 88, 165, 0.71), #B358A5);
-  background: -webkit-linear-gradient(312deg, transparent 25%, RGBA(179, 88, 165, 0.71), #B358A5); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(312deg, transparent 25%, RGBA(179, 88, 165, 0.71), #B358A5); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(312deg, transparent 25%, RGBA(179, 88, 165, 0.71), #B358A5); /* For Firefox 3.6 to 15 */
+  background: -webkit-linear-gradient(312deg, transparent 25%, RGBA(179, 88, 165, 0.71), #B358A5);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(312deg, transparent 25%, RGBA(179, 88, 165, 0.71), #B358A5);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(312deg, transparent 25%, RGBA(179, 88, 165, 0.71), #B358A5);
+  /* For Firefox 3.6 to 15 */
   color: #FFF
 }
 
@@ -136,17 +142,26 @@ section h1 {
 
 .by, .partner {
   width: 23%;
-  max-height: 180px
-}
-
-.by img, .partner img {
-  max-width: 100%;
   max-height: 180px;
 }
+
+.partner img {
+  max-width: 100%;
+  max-height: 100px;
+  padding: 15px;
+}
+
+.by img {
+  max-width: 100%;
+  max-height: 160px;
+  padding: 15px;
+}
+
 .gt-top-menu {
   background-color: transparent;
   font-size: 16px;
 }
+
 .gt-top-menu li:hover, .gt-top-menu li.active, .menu li:hover, .menu li.active {
   border-color: #e41e26
 }
@@ -157,20 +172,21 @@ section h1 {
 }
 
 @media (max-width: 768px) {
-	.flex-box {
-		display: flex!important;
-	}
-
+  .flex-box {
+    display: flex!important;
+  }
   #helpers .content-align {
     display: inline;
   }
-
   .helpers, .judge {
     width: 140px;
     height: 140px;
   }
-
   #helpers .helpers-box {
     text-align: center;
+  }
+  .by, .partner {
+    width: 45%;
+    max-height: 180px;
   }
 }
