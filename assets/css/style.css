@@ -64,11 +64,8 @@ header img {
   right: 0;
   background: linear-gradient(312deg, transparent 25%, RGBA(179, 88, 165, 0.71), #B358A5);
   background: -webkit-linear-gradient(312deg, transparent 25%, RGBA(179, 88, 165, 0.71), #B358A5);
-  /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(312deg, transparent 25%, RGBA(179, 88, 165, 0.71), #B358A5);
-  /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(312deg, transparent 25%, RGBA(179, 88, 165, 0.71), #B358A5);
-  /* For Firefox 3.6 to 15 */
   color: #FFF
 }
 
@@ -116,7 +113,7 @@ section h1 {
   transform: rotate(0deg);
 }
 
-.helpers h3 {
+.helpers h3, .judge h3 {
   position: absolute;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.6);
@@ -165,77 +162,16 @@ section h1 {
   border-color: #e41e26
 }
 
-#by {
-  background-image: url('../img/dots-pattern.png');
-  background-color: #F0F0F0;
-}
-
-#title {
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.links a {
-  color: white;
-}
-
-#facebook, #instagram, #twitter {
-  background-color: gray;
-  color: white;
-  border-radius: 100%;
-  width: 30px;
-  height: 30px;
-  margin: 10px auto 0px;
-  display: inline-block;
-}
-
-#facebook i, #instagram i , #twitter i {
-  margin: 8px;
-}
-
-#facebook a, #instagram a , #twitter a {
-  color: white;
-}
-
-.developers {
-  display: grid !important;
-  font-size: 14px;
-}
-
-.developers a {
-  color: white;
-}
-
-.developers img {
-  width: 50px;
-  height: 50px;
-}
-
-#info {
-  background-color: #000;
-  width: 100%;
-  left: 0px;
-  padding-top: 5px;
-  position: absolute;
-  text-align: center;
-  font-size: 10pt;
-  color: #CECECE;
-}
-
-#info a {
-  color: #CECECE;
-}
-
 @media (max-width: 768px) {
-  .flex-box {
+  #banner .flex-box {
     display: flex!important;
   }
   #helpers .content-align {
     display: inline;
   }
   .helpers, .judge {
-    width: 140px;
-    height: 140px;
+    width: 135px;
+    height: 135px;
   }
   #helpers .helpers-box {
     text-align: center;
@@ -327,4 +263,69 @@ section h1 {
 
 .block {
   display: block!important;
+}
+
+#by {
+  background-image: url('../img/dots-pattern.png');
+  background-color: #F0F0F0;
+}
+
+#facebook, #instagram, #twitter {
+  background-color: gray;
+  color: white;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  margin: 10px auto 0px;
+  display: inline-block;
+}
+
+.developers {
+  font-size: 14px;
+}
+
+.developers a {
+  color: white;
+}
+
+.developers img {
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  width: 40px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  border: 2px solid #FFF;
+  transform: rotate(2deg);
+}
+
+.developers img:nth-child(odd) {
+  transform: rotate(-2deg);
+}
+
+#info {
+  background-color: #000;
+  width: 100%;
+  left: 0px;
+  position: absolute;
+  text-align: center;
+  font-size: 10pt;
+  color: #CECECE;
+  padding: 5px 5%;
+}
+
+#info a {
+  color: #CECECE;
+}
+
+.footer-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-menu a {
+  color: #FFF;
 }
