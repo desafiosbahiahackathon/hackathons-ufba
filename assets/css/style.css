@@ -4,9 +4,9 @@ body {
 
 header.white-bg {
   background-color: #FFF!important;
-  box-shadow: 0px 0px 4px 0px rgba(50,50,50,0.4)!important;
-  -moz-box-shadow: 0px 0px 4px 0px rgba(50,50,50,0.4)!important;
-  -webkit-box-shadow: 0px 0px 4px 0px rgba(50,50,50,0.4)!important;
+  box-shadow: 0px 0px 4px 0px rgba(50, 50, 50, 0.4)!important;
+  -moz-box-shadow: 0px 0px 4px 0px rgba(50, 50, 50, 0.4)!important;
+  -webkit-box-shadow: 0px 0px 4px 0px rgba(50, 50, 50, 0.4)!important;
 }
 
 header.white-bg img {
@@ -30,6 +30,7 @@ header img {
   font-weight: lighter;
   margin: 5px 0;
 }
+
 #banner {
   height: 100%;
   max-height: 700px;
@@ -45,9 +46,11 @@ header img {
   color: #333;
   max-width: 100%;
 }
+
 .banner-content h1 {
   margin: 5px;
 }
+
 .banner-content img {
   max-height: 70%;
   max-width: 100%;
@@ -60,9 +63,12 @@ header img {
   bottom: 0;
   right: 0;
   background: linear-gradient(312deg, transparent 25%, RGBA(179, 88, 165, 0.71), #B358A5);
-  background: -webkit-linear-gradient(312deg, transparent 25%, RGBA(179, 88, 165, 0.71), #B358A5); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(312deg, transparent 25%, RGBA(179, 88, 165, 0.71), #B358A5); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(312deg, transparent 25%, RGBA(179, 88, 165, 0.71), #B358A5); /* For Firefox 3.6 to 15 */
+  background: -webkit-linear-gradient(312deg, transparent 25%, RGBA(179, 88, 165, 0.71), #B358A5);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(312deg, transparent 25%, RGBA(179, 88, 165, 0.71), #B358A5);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(312deg, transparent 25%, RGBA(179, 88, 165, 0.71), #B358A5);
+  /* For Firefox 3.6 to 15 */
   color: #FFF
 }
 
@@ -135,17 +141,26 @@ section h1 {
 
 .by, .partner {
   width: 23%;
-  max-height: 180px
-}
-
-.by img, .partner img {
-  max-width: 100%;
   max-height: 180px;
 }
+
+.partner img {
+  max-width: 100%;
+  max-height: 100px;
+  padding: 15px;
+}
+
+.by img {
+  max-width: 100%;
+  max-height: 160px;
+  padding: 15px;
+}
+
 .gt-top-menu {
   background-color: transparent;
   font-size: 16px;
 }
+
 .gt-top-menu li:hover, .gt-top-menu li.active, .menu li:hover, .menu li.active {
   border-color: #e41e26
 }
@@ -155,22 +170,79 @@ section h1 {
   background-color: #F0F0F0;
 }
 
-@media (max-width: 768px) {
-	.flex-box {
-		display: flex!important;
-	}
+#title {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
 
+.links a {
+  color: white;
+}
+
+#facebook, #instagram, #twitter {
+  background-color: gray;
+  color: white;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  margin: 10px auto 0px;
+  display: inline-block;
+}
+
+#facebook i, #instagram i , #twitter i {
+  margin: 8px;
+}
+
+#facebook a, #instagram a , #twitter a {
+  color: white;
+}
+
+.developers {
+  display: grid !important;
+  font-size: 14px;
+}
+
+.developers a {
+  color: white;
+}
+
+.developers img {
+  width: 50px;
+  height: 50px;
+}
+
+#info {
+  background-color: #000;
+  width: 100%;
+  left: 0px;
+  padding-top: 5px;
+  position: absolute;
+  text-align: center;
+  font-size: 10pt;
+  color: #CECECE;
+}
+
+#info a {
+  color: #CECECE;
+}
+
+@media (max-width: 768px) {
+  .flex-box {
+    display: flex!important;
+  }
   #helpers .content-align {
     display: inline;
   }
-
   .helpers, .judge {
     width: 140px;
     height: 140px;
   }
-
   #helpers .helpers-box {
     text-align: center;
+  }
+  .by, .partner {
+    width: 45%;
+    max-height: 180px;
   }
 }
 
