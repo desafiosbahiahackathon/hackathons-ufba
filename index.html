@@ -6,90 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Minha página</title>
     <link rel="stylesheet" href="vendor/gainTime-2.1.2/css/gaintime.min.css" media ="screen" title="no title">
-    <style media="screen">
-
-      #banner {
-        height: 100%;
-        max-height: 800px;
-        position: relative;
-        background-image: url('assets/bg.png');
-      }
-
-      #banner img {
-        height: 35%;
-        margin: auto;
-      }
-
-      .blanket {
-        height: 100%;
-        width: 100%;
-        transition: rotate(45deg);
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        background: linear-gradient(135deg, #E8B97C00 25%, #fffc, #fff);
-        color: #FFF
-      }
-
-      section main {
-        max-width: 1200px;
-      }
-
-      section h1 {
-        font-weight: lighter;
-        text-transform: uppercase;
-      }
-
-      body {
-       font-size: 16px;
-      }
-
-      #helpers {
-        background-color: #FDE88E;
-      }
-      .helpers {
-        position: relative;
-        width: 160px;
-        height: 160px;
-      }
-
-      .helpers h3 {
-        position: absolute;
-        bottom: 0;
-        background-color: rgba(0, 0, 0, 0.6);
-        color: #FFF;
-        text-align: center;
-        width: 100%;
-        margin: 0;
-        padding: 10px;
-      }
-
-      .helpers img {
-        width: 100%;
-        height: 100%;
-        border-radius: 3px;
-      }
-
-      .by, .partner {
-        width: 23%;
-      }
-      .by img, .partner img {
-        max-width: 100%;
-        max-height: 180px
-      }
-      .gt-top-menu {
-        background-color: transparent;
-        font-size: 16px;
-      }
-      .gt-top-menu li:hover, .gt-top-menu li.active, .menu li:hover, .menu li.active {
-        border-color: #e41e26
-      }
-
-    </style>
+    <link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="gt-top-menu xs-left fixed">
-      <img src="assets/img/gaintime.png" alt="" />
+    <header id="menu" class="gt-top-menu xs-left fixed">
+      <img src="assets/img/marca.png" alt="" />
       <label class="menu-toggle">
         <svg viewBox="0 0 24 24">
           <path fill="#333" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z"></path>
@@ -100,18 +22,24 @@
           <a href="#banner"><li>Início</li></a>
           <a href="#about"><li>Sobre</li></a>
           <a href="#helpers"><li>Mentores</li></a>
-          <a href="forms"><li>Formulários</li></a>
-          <a href="helpers"><li>Auxiliares</li></a>
+          <a href="#judge"><li>Juízes</li></a>
+          <a href="assets/Regulamento-DesafiosBahiaHackathon.pdf" target="_blank"><li><strong>Inscreva-se</strong></li></a>
+          <a href="assets/Regulamento-DesafiosBahiaHackathon.pdf" target="_blank"><li><strong>Regulamento</strong></li></a>
+
         </ul>
       </nav>
     </header>
 
     <section id="banner">
-      <div class="blanket flex-box">
-        <img class="center" src="img/marca.png" />
+      <div class="blanket flex-box centerex">
+        <div class="banner-content">
+          <img class="center" src="assets/img/marca.png" />
+          <h1>Respeita as Mina!</h1>
+        </div>
       </div>
     </section>
-    <section class="text-center center">
+
+    <section id="about" class="text-center center">
       <main class="center">
         <h1>Saca só</h1>
         <p>
@@ -119,7 +47,9 @@
           digitais. Em sua primeira edição traz a temática "Respeita as Mina", uma campanha do Governo do Estado de combate a violência contra as mulheres. Serão 33 horas ininterruptas de ideação e programação.
         </p>
 
-        <h1>33 HORAS ININTERRUPTAS DE PROGRAMAÇÃO</h1>
+        <h2>33 HORAS ININTERRUPTAS DE PROGRAMAÇÃO</h2>
+        <a href="assets/Regulamento-DesafiosBahiaHackathon.pdf" target="_blank"><button class="btn">Inscreva-se</button></a>
+        <a href="assets/Regulamento-DesafiosBahiaHackathon.pdf" target="_blank"><button class="btn">Regulamento</button></a>
       </main>
     </section>
 
@@ -139,24 +69,25 @@
     </div>
   </section> -->
 
-  <!-- <a name="Realizacao"></a> -->
   <section id="helpers" class="center">
     <main class="center">
       <h1 class="text-center">Vai ter uma galera pra te ajudar!</h1>
-      <div>
-        <div class="helpers">
-          <img src="img/Mentores/samira.jpg" alt="Samira Soares">
-          <h3>Samira Soares</h3>
-          <div class="hidden">
-            <p>
-              é ativista do enegrecer, feminista interseccional, candomblecista e vlogueira no canal narrativas negras. Iniciei meu ativismo no movimento estudantil secundarista em Lençóis - Chapada diamantina e hoje atuo nas frentes de luta no combate ao racismo,
-              machismo e lgbtfobia questionando as estruturas da sociedade e buscando empoderar a juventude negra, periférica a reverter o processo de subalternização visibilizando as nossas narrativas negras e de resistência.
-            </p>
+      <div class="helpers-box">
+        <div class="content-align no-margin">
+          <div class="helpers">
+            <img src="assets/img/Mentores/samira.jpg" alt="Samira Soares">
+            <h3>Samira Soares</h3>
+            <div class="hidden">
+              <p>
+                é ativista do enegrecer, feminista interseccional, candomblecista e vlogueira no canal narrativas negras. Iniciei meu ativismo no movimento estudantil secundarista em Lençóis - Chapada diamantina e hoje atuo nas frentes de luta no combate ao racismo,
+                machismo e lgbtfobia questionando as estruturas da sociedade e buscando empoderar a juventude negra, periférica a reverter o processo de subalternização visibilizando as nossas narrativas negras e de resistência.
+              </p>
+            </div>
           </div>
         </div>
         <div class="content-align no-margin">
           <div class="helpers">
-            <img src="img/Mentores/juliana.jpg" alt="Juliana Fajardini" />
+            <img src="assets/img/Mentores/juliana.jpg" alt="Juliana Fajardini" />
             <h3>Juliana Fajardini</h3>
             <div class="hidden">
               <p>
@@ -166,7 +97,7 @@
             </div>
           </div>
           <div class="helpers">
-            <img src="img/Mentores/daniela.jpg" alt="Daniela Feitosa" />
+            <img src="assets/img/Mentores/daniela.jpg" alt="Daniela Feitosa" />
             <h3>Daniela Feitosa</h3>
             <div class="hidden">
               <p>
@@ -178,7 +109,7 @@
         </div>
         <div class="content-align no-margin">
           <div class="helpers">
-            <img src="img/Mentores/lucassantana.jpg" alt="Lucas Santana" />
+            <img src="assets/img/Mentores/lucassantana.jpg" alt="Lucas Santana" />
             <h3>Lucas Santana</h3>
             <div class="hidden">
               <p>
@@ -188,8 +119,8 @@
             </div>
           </div>
           <div class="helpers">
-            <img src="img/Mentores/argolo.jpg" alt="André Argolo" />
-            <h3>André Argolo</h3>
+            <img src="assets/img/Mentores/jp.jpg" alt="André Argolo" />
+            <h3>JP Rodrigues</h3>
             <div class="hidden">
               <p>
                 empreendedor baiano que faz questão de estar presente na comunidade startup e empreendedora de Salvador. Sócio fundador da StartOnApp, há pouco mais de 1 ano vem desenvolvendo um trabalho de liderança a frente da empresa, e recentemente, é vencedor do
@@ -198,7 +129,7 @@
             </div>
           </div>
           <div class="helpers">
-            <img src="img/Mentores/lucasayres.JPG" alt="Lucas Ayres" />
+            <img src="assets/img/Mentores/lucasayres.JPG" alt="Lucas Ayres" />
             <h3>Lucas Ayres</h3>
             <div class="hidden">
               <p>
@@ -211,27 +142,50 @@
       </div>
     </main>
   </section>
-  <section id="about">
+  <section id="judge">
+    <main class="center text-center">
+      <h1>E uma galera pra te avaliar :)</h1>
+      <div class="content-align">
+        <div class="judge">
+          <img src="assets/img/judge/monique.jpg" alt="Monique Evelle">
+          <!-- <h3>Monique Evelle</h3> -->
+        </div>
+        <div class="judge">
+          <img src="assets/img/Realização/Secti.jpg" alt="Secretaria de Ciência, Inovação e Tecnologia da Bahia">
+        </div>
+        <div class="judge">
+          <img src="assets/img/Realização/AvatarSpm.jpg" alt="Secretaria de Políticas para as mulheres">
+        </div>
+        <div class="judge">
+          <img src="assets/img/Realização/ufba.jpg" alt="Universidade Federal da Bahia">
+        </div>
+        <div class="judge">
+          <img src="assets/img/judge/argolo.jpg" alt="André Argolo">
+        </div>
+      </div>
+    </main>
+  </section>
+  <section id="by">
     <main class="center text-center">
       <h1>Realização</h1>
       <div class="content-align">
         <div class="by">
-          <img src="img/Realização/ufba.jpg" alt="Universidade Federal da Bahia" />
+          <img src="assets/img/Realização/ufba.jpg" alt="Universidade Federal da Bahia" />
         </div>
         <div class="by">
-          <img src="img/Realização/adminufba.jpg" alt="Escola de Administração UFBA" />
+          <img src="assets/img/Realização/adminufba.jpg" alt="Escola de Administração UFBA" />
         </div>
         <div class="by">
-          <img src="img/Realização/dcc.png" alt="Departamento de Ciência da Computação" />
+          <img src="assets/img/Realização/dcc.png" alt="Departamento de Ciência da Computação" />
         </div>
         <div class="by">
-          <img src="img/Realização/Secti.jpg" alt="Secretaria de Ciência, Inovação e Tecnologia da Bahia" />
+          <img src="assets/img/Realização/Secti.jpg" alt="Secretaria de Ciência, Inovação e Tecnologia da Bahia" />
         </div>
         <div class="by">
-          <img src="img/Realização/MeninasDigitais.png" alt="Meninas Digitais Regional Bahia" />
+          <img src="assets/img/Realização/MeninasDigitais.png" alt="Meninas Digitais Regional Bahia" />
         </div>
         <div class="by">
-          <img src="img/Realização/rondamariadapenha.png" alt="Ronda Maria da Penha" />
+          <img src="assets/img/Realização/rondamariadapenha.png" alt="Ronda Maria da Penha" />
         </div>
         <hr/>
       </div>
@@ -244,57 +198,27 @@
       <h1>Apoio</h1>
       <div class="content-align">
         <div class="partner">
-          <img src="img/Apoio/campus.png" alt="Campus Party" />
+          <img src="assets/img/Apoio/campus.png" alt="Campus Party" />
         </div>
         <div class="partner">
-          <img src="img/Apoio/sebrae.png" alt="Sebrae" />
+          <img src="assets/img/Apoio/sebrae.png" alt="Sebrae" />
         </div>
         <div class="partner">
-          <img src="img/Apoio/startonapp.svg" alt="StartOnApp" />
+          <img src="assets/img/Apoio/startonapp.svg" alt="StartOnApp" />
         </div>
         <div class="partner">
-          <img src="img/Apoio/evelle.png" alt="Evelle Consultoria" />
+          <img src="assets/img/Apoio/evelle.png" alt="Evelle Consultoria" />
         </div>
         <div class="partner">
-          <img src="img/Apoio/desabafo.png" alt="Desabafo Social" />
+          <img src="assets/img/Apoio/desabafo.png" alt="Desabafo Social" />
         </div>
         <div class="partner">
-          <img src="img/Apoio/oxenti.jpg" alt="OxenTI Menina" />
+          <img src="assets/img/Apoio/oxenti.jpg" alt="OxenTI Menina" />
         </div>
       </div>
     </main>
   </section>
-  <section class="jurados">
-    <h1>// Jurados</h1>
-    <div>
-      <div>
-        <img src="img/Mentores/monique.jpg" alt="Monique Evelle">
-        <h3>Monique Evelle</h3>
-        <p>reconhecida em 2017 pela revista Forbes e em 2015 pela revista Cláudia como uma dos 30 jovens com menos 30 anos mais promissores do país, criou a organização Desabafo Social e a Kumasi, marketplace para empreendedores afrodescendentes. Com 22
-          anos, Monique coleciona prêmios e participações em grandes eventos como TEDxRioVermelho, TEDxSãoPaulo, Social Good, Youth Business International, Prêmio Laureate Brasil, Simpósio da Universidade de Harvard, Conectados al Sur e mais. Através
-          da sua empresa, Evelle Consultoria, presta serviços de marketing e desenvolve metodologias educacionais para grandes organizações como Oxfam Brasil e Secretaria de Educação do Estado da Bahia. Ela é considerada a nova voz do feminismo negro,
-          pelo Estado, e está entre as 25 mulheres mais influentes da internet no Brasil. Atualmente, Monique integra a equipe do Profissão Repórter, da Rede Globo, e o Conselho Consultivo U-Report, da UNICEF.
-        </p>
-      </div>
-    </div>
-  </section>
 
-  <section class="realizacao parceiros">
-    <div>
-      <div>
-        <img src="img/Realização/Secti.jpg" alt="Secretaria de Ciência, Inovação e Tecnologia da Bahia">
-      </div>
-      <div>
-        <img src="img/Realização/AvatarSpm.jpg" alt="Secretaria de Políticas para as mulheres">
-      </div>
-      <div>
-        <img src="img/Realização/ufba.jpg" alt="Universidade Federal da Bahia">
-      </div>
-      <div>
-        <img src="img/Apoio/startonapp.svg" alt="StartOnApp">
-      </div>
-    </div>
-  </section>
   <footer>
     <p>
       Feito por: <a href="https://twitter.com/_viniml" target="_blank">Vinícius Melo</a> e <a href="https://www.instagram.com/andre.argolo/" target="_blank">André Argolo</a>
@@ -319,6 +243,20 @@
         q.parentNode.insertBefore(js, q)
       }
     })()
+
+    var header = document.getElementById('menu');
+    var el = document.scrollingElement || document.documentElement;
+    if (el.scrollTop >= 170) {
+      header.setAttribute("class", "white-bg gt-top-menu xs-left fixed")
+    }
+
+    document.addEventListener("scroll", function () {
+      if (el.scrollTop >= 170) {
+        header.setAttribute("class", "white-bg gt-top-menu xs-left fixed")
+      } else {
+        header.setAttribute("class", "gt-top-menu xs-left fixed")
+      }
+    });
   </script>
 </body>
 
