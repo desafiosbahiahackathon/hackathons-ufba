@@ -329,3 +329,9 @@ section h1 {
 .footer-menu a {
   color: #FFF;
 }
+
+.btn-lg {
+  margin: 15px 5px;
+  padding: 15px 44px;
+  font-size: 20px;
+}
